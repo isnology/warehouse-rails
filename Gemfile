@@ -7,6 +7,8 @@ gem 'rails', '4.1.7'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+gem 'bootstrap-sass', '~> 3.3.1.0'
+gem 'autoprefixer-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -30,7 +32,10 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'factory_girl_rails'
   gem 'annotate'
+  gem 'byebug'
 end
 
 # Use ActiveModel has_secure_password

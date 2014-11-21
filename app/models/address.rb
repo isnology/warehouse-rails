@@ -15,10 +15,10 @@
 #
 
 class Address < ActiveRecord::Base
-  attr_accessible :sub_address, :street_number, :street, :city, :postcode
-  belongs_to :warehouse
-  has_one :state
-  has_one :country
+  #attr_accessible :sub_address, :street_number, :street, :city, :postcode
+  belongs_to :warehouses
+  has_one :states
+  has_one :countries
   validates :state_id, presence: true
   validates :country_id, presence: true
 
