@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121063738) do
+ActiveRecord::Schema.define(version: 20141121071510) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "addresses", force: true do |t|
+    t.string   "sub_address"
+    t.string   "street_number"
+    t.string   "street"
+    t.string   "city"
+    t.integer  "state_id"
+    t.integer  "postcode"
+    t.integer  "country_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "items", force: true do |t|
     t.string   "name"
@@ -31,6 +43,13 @@ ActiveRecord::Schema.define(version: 20141121063738) do
     t.integer  "depth"
     t.integer  "hight"
     t.integer  "max_weight"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "warehouses", force: true do |t|
+    t.string   "name"
+    t.integer  "address_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
