@@ -30,6 +30,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'annotate'
 end
 
 # Use ActiveModel has_secure_password
