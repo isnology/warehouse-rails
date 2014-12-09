@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2920346725">
+    <data-source source="LOCAL" name="Rails warehouse-rails: development" uuid="dc951113-b78f-42a2-a29b-b53e871fd640">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:warehouse-rails_development</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails warehouse-rails: test" uuid="2857e7d7-03d3-4fcb-945f-16765ca0686f">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:warehouse-rails_test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails warehouse-rails: production" uuid="591175e8-c128-4ad5-9f54-e689ed4efa5d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:warehouse-rails_production</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
