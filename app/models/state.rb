@@ -10,7 +10,6 @@
 #
 
 class State < ActiveRecord::Base
-  #attr_accessible :name, :code
   belongs_to :addresses
 
 end

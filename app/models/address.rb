@@ -15,7 +15,6 @@
 #
 
 class Address < ActiveRecord::Base
-  #attr_accessible :sub_address, :street_number, :street, :city, :postcode
   belongs_to :warehouses
   has_one :states
   has_one :countries
