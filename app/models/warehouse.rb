@@ -10,6 +10,5 @@
 #
 
 class Warehouse < ActiveRecord::Base
-  has_one :address
   has_many :entities
 end

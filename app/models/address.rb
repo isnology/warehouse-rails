@@ -15,7 +15,5 @@
 #
 
 class Address < ActiveRecord::Base
-  has_one :postcode
-  has_one :state
-  has_one :country
+
 end
