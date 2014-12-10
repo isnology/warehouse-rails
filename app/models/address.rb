@@ -7,18 +7,15 @@
 #  street_number :string(255)
 #  street        :string(255)
 #  city          :string(255)
+#  postcode_id   :integer
 #  state_id      :integer
-#  postcode      :integer
 #  country_id    :integer
 #  created_at    :datetime
 #  updated_at    :datetime
 #
 
 class Address < ActiveRecord::Base
-  belongs_to :warehouses
-  has_one :states
-  has_one :countries
-  validates :state_id, presence: true
-  validates :country_id, presence: true
-
+  has_one :postcode
+  has_one :state
+  has_one :country
 end

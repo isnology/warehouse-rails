@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
+  resources :postcodes
+
   resources :entities
+
+  resources :warehouses
+
+  resources :addresses
 
   resources :states
 
   resources :countries
-
-  resources :addresses
-
-  resources :warehouses
 
   resources :locations
 

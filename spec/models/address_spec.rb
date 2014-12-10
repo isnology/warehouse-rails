@@ -7,8 +7,8 @@
 #  street_number :string(255)
 #  street        :string(255)
 #  city          :string(255)
+#  postcode_id   :integer
 #  state_id      :integer
-#  postcode      :integer
 #  country_id    :integer
 #  created_at    :datetime
 #  updated_at    :datetime

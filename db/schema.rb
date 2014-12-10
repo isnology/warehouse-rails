@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209075347) do
+ActiveRecord::Schema.define(version: 20141210011637) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 20141209075347) do
     t.string   "street_number"
     t.string   "street"
     t.string   "city"
+    t.integer  "postcode_id"
     t.integer  "state_id"
-    t.integer  "postcode"
     t.integer  "country_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 20141209075347) do
 
   create_table "entities", force: true do |t|
     t.string   "name"
+    t.integer  "warehouse_id"
+    t.integer  "parent_entity_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -56,6 +58,13 @@ ActiveRecord::Schema.define(version: 20141209075347) do
     t.integer  "depth"
     t.integer  "hight"
     t.integer  "max_weight"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "postcodes", force: true do |t|
+    t.string   "code"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

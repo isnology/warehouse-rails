@@ -10,6 +10,5 @@
 #
 
 class Country < ActiveRecord::Base
-  belongs_to :addresses
 
 end

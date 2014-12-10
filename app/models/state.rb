@@ -10,6 +10,5 @@
 #
 
 class State < ActiveRecord::Base
-  belongs_to :addresses
 
 end

@@ -5,5 +5,15 @@
   <%= @entity.name %>
 </p>
 
+<p>
+  <strong>Warehouse:</strong>
+  <%= @entity.warehouse_id %>
+</p>
+
+<p>
+  <strong>Parent entity:</strong>
+  <%= @entity.parent_entity_id %>
+</p>
+
 <%= link_to 'Edit', edit_entity_path(@entity) %> |
 <%= link_to 'Back', entities_path %>

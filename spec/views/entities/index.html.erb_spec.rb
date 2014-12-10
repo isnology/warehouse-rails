@@ -4,10 +4,14 @@ RSpec.describe "entities/index", :type => :view do
   before(:each) do
     assign(:entities, [
       Entity.create!(
-        :name => "Name"
+        :name => "Name",
+        :warehouse_id => 1,
+        :parent_entity_id => 2
       ),
       Entity.create!(
-        :name => "Name"
+        :name => "Name",
+        :warehouse_id => 1,
+        :parent_entity_id => 2
       )
     ])
   end
@@ -15,5 +19,7 @@ RSpec.describe "entities/index", :type => :view do
   it "renders a list of entities" do
     render
     assert_select "tr>td", :text => "Name".to_s, :count => 2
+    assert_select "tr>td", :text => 1.to_s, :count => 2
+    assert_select "tr>td", :text => 2.to_s, :count => 2
   end
 end

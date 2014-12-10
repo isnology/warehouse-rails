@@ -7,8 +7,8 @@ RSpec.describe "addresses/edit", :type => :view do
       :street_number => "MyString",
       :street => "MyString",
       :city => "MyString",
+      :postcode_id => 1,
       :state_id => 1,
-      :postcode => 1,
       :country_id => 1
     ))
   end
@@ -26,9 +26,9 @@ RSpec.describe "addresses/edit", :type => :view do
 
       assert_select "input#address_city[name=?]", "address[city]"
 
-      assert_select "input#address_state_id[name=?]", "address[state_id]"
+      assert_select "input#address_postcode_id[name=?]", "address[postcode_id]"
 
-      assert_select "input#address_postcode[name=?]", "address[postcode]"
+      assert_select "input#address_state_id[name=?]", "address[state_id]"
 
       assert_select "input#address_country_id[name=?]", "address[country_id]"
     end

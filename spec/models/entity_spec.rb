@@ -2,10 +2,12 @@
 #
 # Table name: entities
 #
-#  id         :integer          not null, primary key
-#  name       :string(255)
-#  created_at :datetime
-#  updated_at :datetime
+#  id               :integer          not null, primary key
+#  name             :string(255)
+#  warehouse_id     :integer
+#  parent_entity_id :integer
+#  created_at       :datetime
+#  updated_at       :datetime
 #
 
 require 'rails_helper'

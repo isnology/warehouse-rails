@@ -7,8 +7,8 @@ RSpec.describe "addresses/show", :type => :view do
       :street_number => "Street Number",
       :street => "Street",
       :city => "City",
-      :state_id => 1,
-      :postcode => 2,
+      :postcode_id => 1,
+      :state_id => 2,
       :country_id => 3
     ))
   end

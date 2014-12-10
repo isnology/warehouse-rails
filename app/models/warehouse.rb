@@ -9,9 +9,7 @@
 #  updated_at :datetime
 #
 
-# look up polymorphic associations for rules model
 class Warehouse < ActiveRecord::Base
-  has_one :addresses, dependent: :destroy
-  validates :address_id, presence: true
-  has_many :entities, dependent: :destroy
+  has_one :address
+  has_many :entities
 end
