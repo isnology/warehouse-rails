@@ -13,10 +13,8 @@
     <% @warehouses.each do |warehouse| %>
       <tr>
         <td><%= warehouse.name %></td>
-        <td><%= "#{Address.hash[warehouse.address_id].street_number} " +
-                "#{Address.hash[warehouse.address_id].street} " +
-                "#{Address.hash[warehouse.address_id].city}" %>
-        </td>
+        <% addr = Address.hash[warehouse.address_id] %>
+        <td><%= "#{addr.street_number} #{addr.street} #{addr.city}" %></td>
         <td><%= link_to 'Show', warehouse %></td>
         <td><%= link_to 'Edit', edit_warehouse_path(warehouse) %></td>
         <td><%= link_to 'Destroy', warehouse, method: :delete, data: { confirm: 'Are you sure?' } %></td>

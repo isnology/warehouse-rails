@@ -7,9 +7,8 @@
 
 <p>
   <strong>Address:</strong>
-  <%= "#{Address.hash[@warehouse.address_id].street_number} " +
-                "#{Address.hash[@warehouse.address_id].street} " +
-                "#{Address.hash[@warehouse.address_id].city}" %>
+  <% addr = Address.hash[@warehouse.address_id] %>
+  <%= "#{addr.street_number} #{addr.street} #{addr.city}" %>
 </p>
 
 <%= link_to 'Edit', edit_warehouse_path(@warehouse) %> |
