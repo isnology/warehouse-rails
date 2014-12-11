@@ -11,4 +11,8 @@
 
 class Country < ActiveRecord::Base
 
+  extend ModelHelpers
+
+  self.select(:name)
+
 end

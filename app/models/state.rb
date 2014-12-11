@@ -11,4 +11,8 @@
 
 class State < ActiveRecord::Base
 
+  extend ModelHelpers
+
+  self.select(:name)
+
 end

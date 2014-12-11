@@ -11,4 +11,8 @@
 
 class Postcode < ActiveRecord::Base
 
+  extend ModelHelpers
+
+  self.select(:code)
+
 end

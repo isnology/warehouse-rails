@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :address_id %><br>
-    <%= f.number_field :address_id %>
+    <%= f.select(:address_id, Address.select) %>
   </div>
   <div class="actions">
     <%= f.submit %>

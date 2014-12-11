@@ -29,15 +29,15 @@
   </div>
   <div class="field">
     <%= f.label :postcode_id %><br>
-    <%= f.number_field :postcode_id %>
+    <%= f.select(:postcode_id, Postcode.select) %>
   </div>
   <div class="field">
     <%= f.label :state_id %><br>
-  /*  <%= f.number_field :state_id %> */
+    <%= f.select(:state_id, State.select) %>
   </div>
   <div class="field">
     <%= f.label :country_id %><br>
-    <%= f.number_field :country_id %>
+    <%= f.select(:country_id, Country.select) %>
   </div>
   <div class="actions">
     <%= f.submit %>

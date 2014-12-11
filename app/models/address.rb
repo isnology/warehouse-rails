@@ -16,4 +16,8 @@
 
 class Address < ActiveRecord::Base
 
+  extend ModelHelpers
+
+  self.select(:street_number, :street, :city)
+
 end

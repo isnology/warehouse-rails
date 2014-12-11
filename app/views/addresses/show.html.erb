@@ -22,17 +22,17 @@
 
 <p>
   <strong>Postcode:</strong>
-  <%= @address.postcode_id %>
+  <%= Postcode.hash[@address.postcode_id].code %>
 </p>
 
 <p>
   <strong>State:</strong>
-  <%= @address.state_id %>
+  <%= State.hash[@address.state_id].name %>
 </p>
 
 <p>
   <strong>Country:</strong>
-  <%= @address.country_id %>
+  <%= Country.hash[@address.country_id].name %>
 </p>
 
 <%= link_to 'Edit', edit_address_path(@address) %> |
